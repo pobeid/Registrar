@@ -199,6 +199,9 @@ public class RegistrarProgram {
     }
 
     public static Instructor getInstructor(List<Instructor> instructors, Scanner input) {
+        if (instructors.size() == 0) {
+            return null;
+        }
         System.out.println("Choose from the following instructors");
         for (int i = 0; i < instructors.size(); i++) {
             // get the instructors at position i
@@ -221,6 +224,9 @@ public class RegistrarProgram {
     }
 
     public static Student getStudent(List<Student> students, Scanner input) {
+        if (students.size() == 0) {
+        return null;
+        }
         System.out.println("Choose from the following students");
         for (int i = 0; i < students.size(); i++) {
             // get the instructors at position i
